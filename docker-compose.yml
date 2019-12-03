@@ -2,7 +2,7 @@ pgdata:
   image: postgres:9.3
   volumes:
     - /var/lib/postgresql/data
-  command: true
+  command: echo 'true linha 5'
 
 postgres:
   image: postgres:9.3
@@ -18,7 +18,7 @@ pentahodata:
   image: java:7
   volumes:
     - /pentaho-data
-  command: true
+  command: echo 'true linha 21'
 
 pentaho:
   image: leandrocp/pentaho-server
@@ -31,3 +31,13 @@ pentaho:
   environment:
     DB_USER: postgres
     DB_PASS: password
+
+omnidb:
+  image: taivokasper/omnidb
+  volumes:
+    - config-omnidb:/etc/omnidb 
+  links:
+    - postgres:postgres
+  ports:
+    - "8090:8080"
+    - "25482:25482"
