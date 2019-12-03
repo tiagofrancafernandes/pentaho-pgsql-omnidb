@@ -1,3 +1,26 @@
+---------------
+### Open Pentaho Admin
+
+Open [http://dockerhost:8080/](http://dockerhost:8080/) and fill credentials:
+
+* User Name: admin
+* Password: password
+
+---------------
+
+### Open OMNIDB (SQL Client)
+
+#### Support to: postgresql, mariadb, mysql, oracle
+
+Open [http://dockerhost:8090/](http://dockerhost:8090/) and fill credentials:
+
+* User Name: admin
+* Password: admin
+
+--------------
+
+
+
 # Pentaho BI Server 5.x
 
 Easy-to-Use business intelligence (BI) for all
@@ -30,12 +53,6 @@ docker run --name pentaho \
 -d leandrocp/pentaho-server
 ```
 
-### Open Admin
-
-Open [http://dockerhost:8080/](http://dockerhost:8080/) and fill credentials:
-
-* User Name: admin
-* Password: password
 
 ### Deploy on [Tutum](http://tutum.com)
 
