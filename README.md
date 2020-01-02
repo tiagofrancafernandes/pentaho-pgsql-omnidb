@@ -21,7 +21,7 @@ Open [http://dockerhost:8090/](http://dockerhost:8090/) and fill credentials:
 
 ### Jenkins
 
-Open [http://dockerhost:8081/](http://dockerhost:8091/) 
+Open [http://dockerhost:8081/](http://dockerhost:8081/) 
 
 * To Unlock Jenkins copy the password from:
 
